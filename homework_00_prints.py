@@ -25,11 +25,13 @@ import requests
 
 
 #Escribe aqui tu numero de cuenta. Si tienes dudas consulta el README.md
-numeroDeCuenta = ''
+numeroDeCuenta = '316297183'
 
 
 '''
 HOMEWORK 0.
+python -m pip install package
+python -m pip list -- para ver que paquetes tengo instalado 
 
 You can submit the homework as many times as you like until the deadline. The
 final note will be the maximum note of all your submits.
@@ -37,11 +39,13 @@ final note will be the maximum note of all your submits.
 Every submit with pytest is register on our record!
 
 After the deadline, we will send our solution.
-
+python -m pytest test_hello.py
 You can test your code on your computer before sending it to github.
 To test your code, you can run the ' pytest ' command on your computer or select
 run test option in spyder and select test_homework01.py .
 Remember to install pytest using $pip install pytest or $conda install pytest
+
+command python -m pytest
 '''
 def tarea0():
 
@@ -58,7 +62,7 @@ def tarea0():
     # median rounded to 4 decimals
     # var_95 rounded to 6 decimals
     # is_normal 
-    return 
+    return round(dm.median,4),round(dm.var_95,6),dm.is_normal
 
 
 #NO MODIFICAR
